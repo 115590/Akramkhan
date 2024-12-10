@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1c7042, #d0c66d); 
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.email, .password {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    outline: 2px solid #1c7042; 
+    background-color: #f9f9f9;
+}
+
+.password i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1c7042;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #14552e;
+}
+
+.forgot-password {
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+    color: #d0c66d;
+    display: ;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #1c7042; 
+    padding: 7px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    color: #d0c66d;
+}
+
+.icon-container {
+    font-size: 50px; 
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+}
+
+.icon-container i {
+    cursor: pointer;
+    border: 2px solid #1c7042; 
+    padding: 7px;
+    border-radius: 50%;
+    background-color: white; 
+    color: #1c7042; 
+}
+
